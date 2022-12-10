@@ -1,0 +1,13 @@
+/node_modules
+/src
+package-lock.json
+.stylelintrc.json
+gulpfile.js
+package.json
+.vscode
+.ecrc
+.editorconfig
+README.md
+app/mail.php
+app/favicon.ico
+Комментарии к проекту.md
