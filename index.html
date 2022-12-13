@@ -8,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#fff">
   <title>Животноводческий комлекс</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -22,7 +24,7 @@
   <div class="container">
     <nav class="header__nav">
       <a class="header__logo logo" href="#">
-        <img src="img/logo.svg" alt="logo" width="181" height="88">
+        <img src="img/logo.svg" alt="logo" width="170" height="55">
       </a>
       <ul class="menu list-reset">
         <li class="menu__item">
@@ -91,6 +93,22 @@
 </section>
 
         <section class="about-numbers" style="background-image: url('img/about-numbers/bg.jpg');">
+  <!-- <div class="block-mask"></div> -->
+  <div class="hero-section__text hero-section__text--mobile">
+    <p>
+      КФХ Зубаревой Н.В. на первом месте среди сельхозпредприятий Красноярского края,<br>
+      получивших наивысшие результаты по валовому <br>
+      производству молока на 1.01.2022 года.
+    </p>
+    <p>
+      <strong>
+        Мы произвели 30469,6 тонн молока!
+      </strong>
+    </p>
+  </div>
+  <h2 class="about-numbers__title title">
+    О НАС В ЦИФРАХ
+  </h2>
   <div class="container">
     <div class="about-numbers__inner">
       <img class="about-numbers__img" src="img/big-logo.svg" alt="logo" width="287" height="208">
@@ -127,6 +145,9 @@
             Из них 5 400 га кормовых культур, 9 600 га зерновых культур.
           </p>
         </li>
+        <li class="about-numbers__item">
+          <img class="about-numbers__img about-numbers__img--mobile" src="img/big-logo.svg" alt="logo" width="287" height="208">
+        </li>
       </ul>
     </div>
   </div>
@@ -140,68 +161,65 @@
     <button class="main-arrows__arrow main-arrows__arrow--left btn-reset" type="button"></button>
     <button class="main-arrows__arrow main-arrows__arrow--right btn-reset" type="button"></button>
   </div>
-  <div class="our-record__slider glide">
-    <div class="glide__track" data-glide-el="track">
-      <ul class="our-record__list glide__slides list-reset">
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img1.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img2.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img3.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img4.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img5.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img6.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img7.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-        <li class="our-record__slide glide__slide">
-          <div class="our-record__inner">
-            <img class="our-record__bg" src="img/our-record/img8.jpg" alt="korovka" width="146" height="151">
-            <span class="our-record__text">#kfhzubareva</span>
-            <span class="our-record__liters">700Л</span>
-          </div>
-        </li>
-      </ul>
-
-    </div>
+  <div class="our-record__slider swiper">
+    <ul class="our-record__list swiper-wrapper list-reset">
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img1.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img2.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img3.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img4.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img5.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img6.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img7.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+      <li class="our-record__slide swiper-slide">
+        <div class="our-record__inner">
+          <img class="our-record__bg" src="img/our-record/img8.jpg" alt="korovka" width="146" height="151">
+          <span class="our-record__text">#kfhzubareva</span>
+          <span class="our-record__liters">700Л</span>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -291,17 +309,158 @@
             </div>
             <img class="milk-production__img" src="img/directions/img1.jpg" alt="korovka mu-mu" width="443"
               height="303">
+              <a class="milk-production__link milk-production__link--mobile main-btn" href="#">
+                Читать подробнее
+              </a>
           </div>
         </div>
       </div>
-      <div class="tabs__panel">2</div>
-      <div class="tabs__panel">3</div>
-      <div class="tabs__panel">4</div>
+      <div class="tabs__panel">
+        <div class="crop-production" style="background-image: url('img/directions/crop/bg1.jpg');">
+          <h3 class="crop-production__title title">
+            Растениеводство
+          </h3>
+          <div class="crop-production__text">
+            <p>
+              Направление, которое позволяет, прежде всего, обеспечить натуральными кормами все поголовье
+              животноводческого комплекса.
+              <strong>Общие засеянные площади</strong> за последние пять лет <strong>увеличились с 1300 до 14660
+                гектаров.</strong>
+            </p>
+          </div>
+          <ul class="crop-production__list list-reset">
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img1.png" alt="пшеница">
+              <span class="crop-production__label">Пшеница</span>
+            </li>
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img2.png" alt="Ячмень">
+              <span class="crop-production__label">Ячмень</span>
+            </li>
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img3.png" alt="Люцерна">
+              <span class="crop-production__label">Люцерна</span>
+            </li>
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img4.png" alt="Рапс">
+              <span class="crop-production__label">Рапс</span>
+            </li>
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img5.png" alt="Кукуруза">
+              <span class="crop-production__label">Кукуруза</span>
+            </li>
+            <li class="crop-production__item">
+              <img class="crop-production__img" src="img/directions/crop/img6.png" alt="Рожь">
+              <span class="crop-production__label">Рожь</span>
+            </li>
+          </ul>
+          <div class="crop-production__units">
+            <p>
+              Количество единиц сельхозтехники: 97
+            </p>
+            <p>
+              в том числе — 16 комбайнов; 5 косилок; 31 трактор и другая техника.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__panel">
+        <div class="crop-production crop-production--genetics"
+          style="background-image: url('img/directions/crop/bg2.jpg');">
+          <h3 class="crop-production__title title">
+            ГЕНЕТИКА
+          </h3>
+          <div class="crop-production__text">
+            <p>
+              К (Ф)Х Зубарева Н.В. имеет ряд направлений деятельности, заниматься которыми необходимо уже сегодня,
+              чтобы обеспечить успех развития предприятия на перспективу ближайших пяти — десяти лет. Направление
+              генетики — одно из ведущих. Нам хочется выращивать продуктивных и здоровых животных, что прямым образом,
+              влияет на молочную продуктивность.
+            </p>
+            <p>
+              Данная работа позволяет выправить генетические болезни коров, выстроить дальнейший генетический план для
+              получения здорового потомства. Современное программное обеспечение для менеджмента стада — нам в помощь.
+            </p>
+          </div>
+          <ul class="crop-production__list list-reset">
+            <li class="crop-production__item">
+              Для управления стадом используется ПО DairyComp305
+            </li>
+            <li class="crop-production__item">
+              Селекционная работа ведется в ПО Селекс
+            </li>
+            <li class="crop-production__item">
+              Рацион балансируется в ПО HYBRIMIN Futter 5
+            </li>
+            <li class="crop-production__item">
+              ПО SenseHUB помогает отслеживать приход телок в охоту и своевременно их осеменять.
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="tabs__panel">
+        <div class="crop-production crop-production--genetics crop-production--heifers"
+          style="background-image: url('img/directions/crop/bg3.jpg');">
+          <h3 class="crop-production__title title">
+            ПРОИЗВОДСТВО НЕТЕЛЕЙ
+          </h3>
+          <div class="crop-production__text">
+            <p>
+              Правильно выстроенная селекционная работа по выращиванию тёлок — это основа для получения выносливой
+              и высокоудойной коровы, а, значит, — возможность инвестировать в будущее стадо. В нашем К (Ф)Х Зубарева
+              Н.В. доказано, что соблюдая условия сбалансированного кормления и четкого контроля за развитием
+              подопечных,
+              отёлы можно успешно производить в возрасте 24 месяцев.
+            </p>
+          </div>
+          <ul class="crop-production__list list-reset">
+            <li class="crop-production__item">
+              Воспроизводство
+            </li>
+            <li class="crop-production__item">
+              <span class="crop-production__item-text">
+                Выход тёлок от сексированного семени
+              </span>
+              <span class="crop-production__num">
+                92%
+              </span>
+            </li>
+            <li class="crop-production__item">
+              <span class="crop-production__item-text">
+                Общий выход телок
+              </span>
+              <span class="crop-production__num">
+                65%
+              </span>
+            </li>
+            <li class="crop-production__item">
+              <span class="crop-production__item-text">
+                Сервис период
+              </span>
+              <span class="crop-production__num">
+                116%
+              </span>
+            </li>
+            <li class="crop-production__item">
+              <span class="crop-production__item-text">
+                Процент стельных <br>
+                в стаде
+              </span>
+              <span class="crop-production__num">
+                56%
+              </span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
         <section class="video-excursion" style="background-image: url('img/video-excursion/bg.jpg');">
+
   <a class="video-excursion__link" href="#">
     Видеоэкскурсия <span class="video-excursion__icon"></span>
   </a>
@@ -310,7 +469,7 @@
         <section class="we-team">
   <div class="we-team__container container">
     <div class="we-team__inner">
-      <img class="we-team__photo" src="img/we-team/img1.jpg" alt="korovka" width="195" height="205">
+      <img class="we-team__photo we-team__photo--1" src="img/we-team/img1.png" alt="korovka" width="195" height="205">
       <div class="we-team__descr">
         <h2 class="we-team__title title">
           Мы — команда!
@@ -328,7 +487,7 @@
           </p>
         </div>
       </div>
-      <img class="we-team__photo" src="img/we-team/img2.jpg" alt="kto-to" width="195" height="205">
+      <img class="we-team__photo we-team__photo--2" src="img/we-team/img2.png" alt="kto-to" width="195" height="205">
     </div>
   </div>
 </section>
@@ -635,135 +794,140 @@
     <div class="footer__container container">
       <nav class="footer__inner">
         <a class="footer__logo logo" href="#">
-          <img src="img/logo.svg" alt="logo" width="258" height="126">
-          <ul class="footer__items list-reset">
-            <li class="footer__item">
-              <span class="footer__text">
-                О компании
-              </span>
-              <ul class="footer__list list-reset">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Миссия и цель
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Наши планы
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    История компании
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Корпоративная жизнь
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Видеоэкскурсия
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__item">
-              <span class="footer__text">
-                Направления
-              </span>
-              <ul class="footer__list list-reset">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Производство молока
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Растениеводство
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Генетика
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Производство нетелей
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Наука и инновации
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__item">
-              <span class="footer__text">
-                Работа и карьера
-              </span>
-              <ul class="footer__list list-reset">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Вакансии
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Практика
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Истории успеха
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Кадровая политика
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__item">
-              <span class="footer__text">
-                Новости
-              </span>
-              <ul class="footer__list list-reset">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Сми о нас
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Фотогалерея
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__item">
-              <span class="footer__text">
-                Контакты
-              </span>
-              <ul class="footer__list list-reset">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Адреса
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">
-                    Схема проезда
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <img src="img/logo.svg" alt="logo" width="242" height="79">
         </a>
+        <ul class="footer__items list-reset">
+          <li class="footer__item">
+            <span class="footer__text">
+              О компании
+            </span>
+            <ul class="footer__list list-reset">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Миссия и цель
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Наши планы
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  История компании
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Корпоративная жизнь
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Видеоэкскурсия
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <span class="footer__text">
+              Направления
+            </span>
+            <ul class="footer__list list-reset">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Производство молока
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Растениеводство
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Генетика
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Производство нетелей
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Наука и инновации
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <span class="footer__text">
+              Работа и карьера
+            </span>
+            <ul class="footer__list list-reset">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Вакансии
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Практика
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Истории успеха
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Кадровая политика
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <span class="footer__text">
+              Новости
+            </span>
+            <ul class="footer__list list-reset">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Сми о нас
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Фотогалерея
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <span class="footer__text">
+              Контакты
+            </span>
+            <ul class="footer__list list-reset">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Адреса
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">
+                  Схема проезда
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item footer__item--mobile">
+            <a class="footer__logo logo" href="#">
+              <img src="img/logo.svg" alt="logo" width="242" height="79">
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
